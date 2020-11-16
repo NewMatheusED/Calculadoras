@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <title>Criando sua conta</title>
+    <style>
+      a {
+        color: blue;
+        text-decoration: none;
+      }
+      
+      a:hover {
+        text-decoration: underline;
+      }
+
+      h3 {
+        background-color: blue;
+        color: white;
+        font-size: 30px;
+        font-family: Arial;
+        padding: 0 50px 0 50px;
+        width: 300px;
+        border-radius: 25px
+      }
+
+      button {
+        margin-top: 30px;
+        border-radius: 7px;
+        cursor: pointer;
+      }
+
+      h3:hover {
+        background-color: darkblue;
+        transition: 0.5s;
+      }
+
+      input:placeholder-shown, input[type=date] {
+        border-color: blue;
+      }
+
+      a:active {
+      background-color: blue;
+      color: white;
+    }
+    </style>
+    <script>
+      function mostrarTela2() {
+        var mostrar = document.getElementById("Final2");
+        var nome_min = document.getElementById("nome").value;
+        var sobrenome_min = document.getElementById("sobrenome").value;
+        var nome_max = document.getElementById("nome").value;
+        var sobrenome_max = document.getElementById("sobrenome").value;
+        var nome = nome_min.charAt(0).toUpperCase() + nome_max.substr(1).toLowerCase();
+        var sobrenome = sobrenome_min.charAt(0).toUpperCase() + sobrenome_max.substr(1).toLowerCase();
+        mostrar.innerHTML = "Olá " + nome + " " + sobrenome + "!"; 
+      }
+    </script>
+  </head>
+  <body>
+  <form>
+<h3>Criando sua conta</h3>
+<div>
+  <p>Para começar,<strong> digite um email para login:</strong></p>
+    <input type="text" placeholder="Email">
+</div>
+<div>
+  <p>Agora, <strong>digite uma senha</strong>, mínimo 8 caracteres:</p>
+  <input type="password" placeholder="Senha">
+  <br>
+  <input type="checkbox">
+  <em>Mostrar senha</em>
+  </div>
+  <br>
+  <div>
+    <p>Me diga seu <strong>nome</strong> agora:</p>
+    <input id="nome" type="text" placeholder="Nome"></input>
+    <br>
+    <p>Agora seu <strong>sobrenome</strong>:</p>
+    <input id="sobrenome" type="text" placeholder="Sobrenome"></input>
+    <br>
+    <p>Sua <strong>data de nascimento:</strong></p>
+    <input id="idade" type="date" placeholder="00/00/0000"></input>
+  </div>
+  <div>
+  <button onclick="mostrarTela2()">Criar conta</button>
+  <p id="Final2"></p>
+</div>
+  <p>Já possui uma conta? Click <a href="face.html">aqui</a> para prosseguir</p>
+  </form>
+  </body>
+</html>

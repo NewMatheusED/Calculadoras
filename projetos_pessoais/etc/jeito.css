@@ -1,0 +1,23 @@
+.title {
+    background: cyan;
+    border-radius: 10px;
+    width: 230px;
+    padding: 5px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.title:hover {
+    color: white;
+    background: blue;
+}
+div {
+    padding: 5px;
+}
+
+button {
+    padding: 4px;
+    border-radius: 3px;
+    background: linear-gradient(to right, red, blue);
+    color: white;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conta</title>
+</head>
+<body>
+   <h2>Faça aqui sua conta</h2>
+   <br>
+    <p>Primeiro Número</p>
+   <input id="num1" type="number">
+   <br>
+   <p>Segundo número</p>
+   <input id="num2" type="number">
+   <br>
+   <p>Escolha a operação que deseja realizar:</p>
+   <form>
+   <div>
+   <button id="soma">+</button>
+   <p>Soma</p>
+   </div>
+   <div>
+   <button id="subtração">-</button>
+   <p>Subtração</p>
+   </div>
+   <div>
+   <button id="divisão">/</button>
+   <p>Divisão</p>
+   </div>
+   <div>
+   <button id="multiplicação">*</button>
+   <p>Multiplicação</p>
+   </div>
+   <div>
+       <input id="fazer" type="submit" name="" value="Fazer conta">
+       <p id="resultado"></p>
+   </div>
+   </form>
+   <script>
+       var num1 = document.getElementById("num1").value;
+       var num2 = document.getElementById("num2").value;
+       var soma1 = document.getElementById("soma");
+       var subtração1 = document.getElementById("subtração");
+       var divisão1 = document.getElementById("divisão");
+       var multiplicação1 = document.getElementById("multiplicação");
+
+       function soma(num1, num2) {
+
+           return num1 + num2;
+       }
+
+       function subtração(num1, num2) {
+
+           return num1 - num2;
+       }
+
+       function divisão(num1, num2) {
+
+           return num1 / num2;
+       }
+
+       function multiplicação(num1, num2) {
+
+           return num1 * num2;
+       }
+   </script>
+</body>
+</html>
