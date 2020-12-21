@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitágoras</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var incógnita = prompt("Quem é a incógnita, hipotenusa (h) ou um cateto (c)?");
+
+    switch (incógnita){
+        case "h":
+        var valorCAh = prompt("Digite o valor do cateto A:");
+        var valorCOh = prompt("Digite o valor do cateto B:");
+
+        var resultadoH = valorCAh**2 + valorCOh**2
+        var resultadoHsqrt = Math.sqrt(resultadoH);
+        
+        document.write("O valor da hipotenusa é " + resultadoHsqrt);
+
+        break;
+
+        case "c":
+        var valorCAco = prompt("Digite o valor do cateto:");
+        var valorHco = prompt("Digite o valor da hipotenusa:");
+
+        var resultadoCO =  valorHco**2 - valorCAco**2  
+        var resultadoCOsqrt = Math.sqrt(resultadoCO);
+
+        document.write("O valor do cateto é " + resultadoCOsqrt);
+
+        break;
+    }
+</script>
+</html>
