@@ -137,6 +137,7 @@
             <a href="#">Árabe</a>
         </div><!--center-->
     </section><!--linguas-->
-    
+    <script src="../Curso FullStack/JavaScript/jQuery/jquery.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

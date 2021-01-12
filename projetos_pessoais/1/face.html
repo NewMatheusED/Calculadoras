@@ -44,10 +44,11 @@
     <script>
       function mostrarTela() {
         var mostrar = document.getElementById("Final")
-        var resultado = document.getElementById("nome").value;
         var nome_min = document.getElementById("nome").value;
         var nome_max = document.getElementById("nome").value;
+
         var nome = nome_min.charAt(0).toUpperCase() + nome_max.substr(1).toLowerCase();
+
           mostrar.innerHTML = "Você está logado! Olá " + nome + "!";
         }
     </script>
